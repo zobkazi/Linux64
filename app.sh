@@ -1,4 +1,14 @@
-sudo apt update
-sudo apt upgrade
+ sudo sh app.sh
 
-# They're common commands for Linux admins and people doing DevOps, but are handy to know even if you don't use the command line often.
+ # your main password
+
+ mkdir ~/.kazi
+
+ cd ~/.kazi
+
+ touch javascript.js
+
+ nano console,log('Zobaidul Kazi')
+
+exit
+
