@@ -12,3 +12,4 @@
 
 exit
 
+sudo apt-get update
