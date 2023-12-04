@@ -13,8 +13,6 @@ sudo apt update
 sudo apt install nodejs -y
 sudo apt install npm -y
 
-
-
 # Productivity
 
 sudo apt install chromium -y
@@ -28,11 +26,9 @@ sudo apt install kolourpaint -y
 sudo apt install peruse -y
 sudo apt install gnome-dictionary -y
 
-
 sudo apt install gnome-calendar -y
 sudo apt install gnome-music -y
 sudo apt install gnome.epiphany -y
-
 
 sudo apt update
 sudo apt install minuet -y
@@ -82,6 +78,5 @@ sudo apt install gnome-font-viewer
 sudo apt install gnome-font-viewer
 sudo apt install font-manager
 sudo apt install hubble
-
 
 #zobaidulkazi

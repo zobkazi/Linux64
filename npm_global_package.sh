@@ -9,4 +9,3 @@ sudo npm install -g pnpm
 sudo npm install --global yarn
 #n --node version manager
 sudo npm install -g n
-
