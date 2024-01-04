@@ -47,3 +47,4 @@ sudo sh oldBootmanuDemp.sh
 sudo apt apdate
 sudo sh deb_app_install.sh
 ```
+## flatpack and docker packages install kali linux packages
