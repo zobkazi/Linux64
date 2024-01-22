@@ -1,1 +1,2 @@
-sudo rm -rf *
+# all remove
+# sudo rm -rf *

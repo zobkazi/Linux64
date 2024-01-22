@@ -13,5 +13,3 @@ touch javascript.js
 #  nano console,log('Zobaidul Kazi')
 
 exit
-
-sudo apt-get update
