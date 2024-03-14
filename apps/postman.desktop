@@ -6,3 +6,8 @@ Icon=/opt/Postman/app/resources/app/assets/icon.png
 Terminal=false
 Type=Application
 Categories=Development;
+
+ 
+# location 
+## /usr/share/applications
+## touch postman.desktop
