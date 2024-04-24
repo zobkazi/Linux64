@@ -13,6 +13,8 @@
         "imagePreview.previewEditor": true,
         "mainThreadWebview-markdown.preview": true
     },
-    "testing.alwaysRevealTestOnStateChange": true
+    "testing.alwaysRevealTestOnStateChange": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Andromeda Colorizer"
     
 }
