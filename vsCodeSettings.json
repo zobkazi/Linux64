@@ -1,0 +1,18 @@
+{
+    "redhat.telemetry.enabled": true,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "diffEditor.codeLens": true,
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "imagePreview.previewEditor": true,
+        "mainThreadWebview-markdown.preview": true
+    },
+    "testing.alwaysRevealTestOnStateChange": true
+    
+}
