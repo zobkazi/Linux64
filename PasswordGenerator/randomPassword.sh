@@ -18,7 +18,7 @@ generate_password() {
 default_length=12
 
 # Default character set (alphanumeric)
-default_charset="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+default_charset="A!B@C#D#EF%G&H*I(J)KLM&N{OP}QRS!TUVW#XYZ$)a&b:cdefgh:ij?lmnopqrstuvwxyz0123456789"
 
 # Parse command-line arguments
 while getopts ":l:c:" opt; do
