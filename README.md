@@ -13,6 +13,12 @@ sudo sh update.hs
 
 ```
 
+
+```sh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools/zshrc-config-edite.sh)"
+```
+
 ## MongoDB Install In Linux
 
 ### clone repositories && run commands
