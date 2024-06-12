@@ -33,12 +33,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools
 
 ## MongoDB Install In Linux
 
-### clone repositories && run commands
-
-```sh
-sudo sh mongodbInstall.sh
-```
-
 ## Remove Your Old Boot Menu .
 
 ### I mean this comment will work to delete your computer's old bios menus
