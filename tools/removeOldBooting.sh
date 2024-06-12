@@ -36,7 +36,7 @@ if [ "$y_n" = "Y" ] || [ "$y_n" = "y" ]; then
     fi
 else
     echo "Old EFI boot entries removal cancelled."
-    exit 0
+
 fi
 
 # Display updated EFI boot menu
