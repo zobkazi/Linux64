@@ -4,7 +4,10 @@
 ## zsh install
 
 echo "Zsh Packages and Configurations Edite Power by @zobaidulkazi"
-
+## Github Profile
+echo "https://github.com/zobkazi"
+## Github Repo
+echo "https://github.com/zobkazi/Linux64/blob/main/README.md"
 ## Zsh authsuggestions install
 
 echo "Install AuthSuggestion and Syntax Highlight and ZSH......... Y/N"
