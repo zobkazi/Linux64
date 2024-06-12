@@ -31,8 +31,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools
 
 
 
-## MongoDB Install In Linux
-
 ## Remove Your Old Boot Menu .
 
 ### I mean this comment will work to delete your computer's old bios menus
@@ -47,16 +45,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools
 </p>
 </details>
 
-### clone repositories && run commands
+### Remove Your Old Boot Menu .
 
 ```sh
-curl  -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools/removeOldBooting.sh | sh
+## Remove Your Old Boot Menu .
+sh -c $(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools/removeOldBooting.sh)
+
 ```
 
 ## Most useful APT packages list install one commands
 
 ```sh
-sudo apt apdate
-sudo sh deb_app_install.sh
+## Most useful APT packages list install one commands
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/apps/flatpack.sh)"
 ```
-## flatpack and docker packages install kali linux packages
+
