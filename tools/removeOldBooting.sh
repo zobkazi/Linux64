@@ -2,64 +2,51 @@
 
 ## Remove Old Booting
 
-echo "Remove Old Booting"
+echo "Remove Old Booting Power by @zobaidulkazi"
+echo "https://github.com/zobkazi"
+echo "https://github.com/zobkazi/Linux64/blob/main/README.md"
 
-# check efi boot manu
-
+# Display current EFI boot menu
+echo "Current EFI Boot Menu:"
 efibootmgr
 
-# check user input
-echo "Remove your old efi boot manu Y/N"
-read y_n
-
-# check user input
+# Prompt user for confirmation
+echo "Remove your old EFI boot entries? (Y/N)"
+read -r y_n
 
 if [ "$y_n" = "Y" ] || [ "$y_n" = "y" ]; then
-    sudo efibootmgr -b 0000 -B
+    # Get current boot entry
+    current_boot_entry=$(efibootmgr | grep BootCurrent | awk '{print $2}')
 
-    sudo efibootmgr -b 0001 -B
+    # Get all boot entries except the current one
+    old_boot_entries=$(efibootmgr | grep "Boot[0-9]" | grep -v "BootCurrent" | awk '{print $1}' | cut -c 5-)
 
-    sudo efibootmgr -b 0002 -B
-
-    sudo efibootmgr -b 0003 -B
-
-    sudo efibootmgr -b 0004 -B
-
-    sudo efibootmgr -b 0005 -B
-
-    sudo efibootmgr -b 0006 -B
-
-    sudo efibootmgr -b 0007 -B
-
-    sudo efibootmgr -b 0008 -B
-
-    sudo efibootmgr -b 0009 -B
-
-    sudo efibootmgr -b 000a -B
-
-    sudo efibootmgr -b 000b -B
-
-    sudo efibootmgr -b 000c -B
-
-    sudo efibootmgr -b 000d -B
-
-    sudo efibootmgr -b 000e -B
-
+    # Check if there are old boot entries to delete
+    if [ -z "$old_boot_entries" ]; then
+        echo "There are no other EFI boot entries to remove."
+    else
+        # Remove old boot entries
+        echo "Removing old boot entries..."
+        for boot_entry in $old_boot_entries; do
+            if [ "$boot_entry" != "$current_boot_entry" ]; then
+                sudo efibootmgr -b "$boot_entry" -B
+            fi
+        done
+        echo "Your old EFI boot entries have been successfully removed."
+    fi
 else
-    echo "Exit"
-
-    exit
-
+    echo "Old EFI boot entries removal cancelled."
+    exit 0
 fi
 
-echo "Your Old efi boot manu Remove Successful"
+# Display updated EFI boot menu
+echo "Current EFI Boot Menu:"
+efibootmgr
 
-echo "Current Boot Manu is " $(efibootmgr)
-
-# check efi boot manu
-
+# Print closing messages
 echo "Remove Old Booting End"
+echo "Thank You, Bye..!! :)" "$USER"
 
-exit
-
-reboot
+# Optional: reboot the system
+# Uncomment the following line if you want to automatically reboot the system
+# reboot

@@ -50,7 +50,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools
 ### clone repositories && run commands
 
 ```sh
-sudo sh oldBootmanuDemp.sh
+curl  -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools/removeOldBooting.sh | sh
 ```
 
 ## Most useful APT packages list install one commands
