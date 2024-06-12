@@ -1,27 +1,27 @@
 # zshrc-config-edite.sh
 #!/bin/sh
 
-echo "Zsh Packages and Configurations Edite"
+## zsh install
+
+echo "Zsh Packages and Configurations Edite Power by @zobaidulkazi"
 
 ## Zsh authsuggestions install
 
-echo "Zsh AuthSuggestion and Syntax Highlight Install.. Y/N"
+echo "Install AuthSuggestion and Syntax Highlight and ZSH......... Y/N"
 
 read y_n
 
 if [ "$y_n" = "Y" ] || [ "$y_n" = "y" ]; then
+    sudo apt install zsh
+
     sudo apt install zsh-autosuggestions
+
     sudo apt install zsh-syntax-highlighting
 fi
 
-# Get the current directory
-CURRENT_DIR=$(pwd)
-echo $CURRENT_DIR
+# Set the default shell
+sudo chsh -s $(which zsh)
 
-# Get the parent directory
-PARENT_DIR=$(dirname "$CURRENT_DIR")
-
-echo $PARENT_DIR
 # Get the current username
 USERNAME=$(whoami)
 
@@ -124,7 +124,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 configure_prompt() {
-    prompt_symbol=㉿👉
+    prompt_symbol=👉
     # Skull emoji for root terminal
     #[ "$EUID" -eq 0 ] && prompt_symbol=💀
     case "$PROMPT_ALTERNATIVE" in
@@ -288,8 +288,10 @@ fi
 if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
+
+## Set Configurations For Zsh
 EOF
 
-echo "Zshrc Configurations Edite Completed"
-echo "Please Exit Your Terminal And Reopen It"
+echo "Zshrc Configurations Edite Successful........."
+echo "Please Exit Your Terminal And Reopen It........"
 echo "Thank You, Bye..!!"
