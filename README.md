@@ -13,11 +13,23 @@ sudo sh update.hs
 
 ```
 
-
+## ZSHRC Configuration Installation
 ```sh
-
+## ZSHRC Configuration Installation
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools/zshrc-config-edite.sh)"
 ```
+
+## Docker Install In Linux
+
+### Run Docker Setup Script
+
+```sh   
+## Docker Install In Linux
+ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/docker/docker-setup.sh)"
+```
+
+
+
 
 ## MongoDB Install In Linux
 
