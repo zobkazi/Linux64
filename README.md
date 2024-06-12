@@ -57,6 +57,7 @@ sh -c $(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/tools/
 
 ```sh
 ## Most useful APT packages list install one commands
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/apps/flatpack.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/apps/debPackagesInstall.sh)"
+
 ```
 
