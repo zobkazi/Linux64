@@ -297,4 +297,4 @@ EOF
 
 echo "Zshrc Configurations Edite Successful........."
 echo "Please Exit Your Terminal And Reopen It........"
-echo "Thank You, Bye..!!"
+echo "Thank You, Bye..!! :)" $USER
