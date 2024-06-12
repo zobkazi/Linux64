@@ -1,5 +1,7 @@
 #!/bin/bash
+## zoshrc-config-edite.sh
 
+# Define the file path
 # Get the current username
 USERNAME=$(whoami)
 
