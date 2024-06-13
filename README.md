@@ -2,17 +2,6 @@
 
 Yes, Linux is indeed a powerful operating system. It is known for its stability, security, and flexibility.
 
-## Update Your System
-
-```sh
-git clone https://github.com/zobaidulkazi64/Linux64.git
-
-cd Linux64
-
-sudo sh update.hs
-
-```
-
 ## ZSHRC Configuration Installation
 ```sh
 ## ZSHRC Configuration Installation
