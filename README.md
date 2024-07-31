@@ -50,3 +50,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zobkazi/Linux64/main/apps/
 
 ```
 
+## More tools Added
+
+```bash
+sudo apt install kazi
+
+```
+
